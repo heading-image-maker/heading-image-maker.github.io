@@ -4,6 +4,40 @@ body {
   width: 1280px;
 }
 
+header {
+  margin: 8px 0;
+  text-align: right;
+}
+
+#links,
+#links li {
+  margin: 0;
+  padding: 0;
+}
+
+#links li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+#links a {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+#links .github a {
+  background-color: black;
+  color: white;
+}
+
+#links .twitter a {
+  background-color: #1DA1F2;
+  color: white;
+}
+
 #canvas {
   background-color: navy;
   color: white;
