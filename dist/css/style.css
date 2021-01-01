@@ -1,0 +1,126 @@
+body {
+  background-color: #f0f0f0;
+  margin: 20px auto;
+  width: 1280px;
+}
+
+#canvas {
+  background-color: navy;
+  color: white;
+  height: 670px;
+  position: relative;
+  width: 1280px;
+}
+
+#canvas .text {
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+}
+
+#canvas h1 {
+  font-family: 'M PLUS 1p';
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  top: 44%;
+}
+
+#canvas .description {
+  font-family: 'Noto Serif JP';
+  font-size: 28px;
+  font-weight: 700;
+  top: 64%;
+  letter-spacing: 0.2rem;
+}
+
+#form {
+  margin-top: 24px;
+  width: 1280px;
+}
+
+#form .dt {
+  font-weight: bold;
+}
+
+#form > *+* {
+  margin-top: 12px;
+}
+
+#form > *:last-child {
+  margin-top: 24px;
+}
+
+#form input[type=text], #form textarea {
+  padding: 8px;
+  width: calc(100% - 20px);
+}
+
+#form textarea {
+  height: 3em;
+}
+
+#form input#input-color,
+#form input#input-background-color {
+  width: 144px;
+}
+
+#form .color-palette,
+#form #random-color {
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  height: 28px;
+  position: relative;
+  width: 28px;
+}
+
+#form .color-palette[data-color=white] { color: white; }
+#form .color-palette[data-color=yellow] { color: yellow; }
+#form .color-palette[data-color=deeppink] { color: deeppink; }
+#form .color-palette[data-color=red] { color: red; }
+#form .color-palette[data-color=midnightblue] { color: midnightblue; }
+#form .color-palette[data-color=black] { color: black; }
+
+#form .color-palette[data-background-color=black] { background-color: black; }
+#form .color-palette[data-background-color=navy] { background-color: navy; }
+#form .color-palette[data-background-color=darkgreen] { background-color: darkgreen; }
+#form .color-palette[data-background-color=orangered] { background-color: orangered; }
+#form .color-palette[data-background-color=red] { background-color: red; }
+#form .color-palette[data-background-color=lightgreen] { background-color: lightgreen; }
+#form .color-palette[data-background-color=hotpink] { background-color: hotpink; }
+#form .color-palette[data-background-color=yellow] { background-color: yellow; }
+#form .color-palette[data-background-color=lightskyblue] { background-color: lightskyblue; }
+#form .color-palette[data-background-color=paleturquoise] { background-color: paleturquoise; }
+
+#form #random-color::after {
+  content: '❓';
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-44%) translateX(-50%);
+  -webkit-transform: translateY(-44%) translateX(-50%);
+}
+
+#form button {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer,
+footer a {
+  color: gray;
+}
+
+footer hr {
+  border: 0;
+  border-bottom: 1px solid;
+  margin: 40px auto;
+  max-width: 10%;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "heading-image-maker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tool that creates a heading image and saves it in a file.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "author": "Fukuchi Haruki",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.16.0",
+    "eslint-loader": "^4.0.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0"
+  },
+  "dependencies": {
+    "hello-color": "^1.0.2",
+    "html2canvas": "^1.0.0-rc.7"
+  }
+}
