@@ -123,14 +123,14 @@ header {
 
 #form .color-palette[data-background-color=black] { background-color: black; }
 #form .color-palette[data-background-color=navy] { background-color: navy; }
-#form .color-palette[data-background-color=darkgreen] { background-color: darkgreen; }
+#form .color-palette[data-background-color=seagreen] { background-color: seagreen; }
 #form .color-palette[data-background-color=orangered] { background-color: orangered; }
 #form .color-palette[data-background-color=red] { background-color: red; }
 #form .color-palette[data-background-color=lightgreen] { background-color: lightgreen; }
 #form .color-palette[data-background-color=hotpink] { background-color: hotpink; }
 #form .color-palette[data-background-color=yellow] { background-color: yellow; }
 #form .color-palette[data-background-color=lightskyblue] { background-color: lightskyblue; }
-#form .color-palette[data-background-color=paleturquoise] { background-color: paleturquoise; }
+#form .color-palette[data-background-color=royalblue] { background-color: royalblue; }
 
 #form #random-color::after {
   content: '❓';
