@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Heading Image Maker | 見出し画像メーカー</title>
-    <meta name="description" content="A tool that makes a heading image and saves it in a file. | 見出し画像を作ってファイルに保存する、それだけのツール。">
-    <meta name="keywords" content="note,見出し,画像,heading,image,png">
-    <meta name='twitter:card' content='summary_large_image'>
-    <meta name='twitter:site' content='@fukuchiharuki'>
-    <meta name='twitter:title' content='Heading Image Maker | 見出し画像メーカー'>
-    <meta name='twitter:description' content='A tool that makes a heading image and saves it in a file. | 見出し画像を作ってファイルに保存する、それだけのツール。'>
-    <meta name='twitter:image' content='https://fukuchiharuki.me/heading-image-maker/images/key-visual.png'>
-    <link rel="stylesheet" media="all" href="./css/font.css">
-    <link rel="stylesheet" media="all" href="./css/style.css">
-  </head>
-  <body>
 
-    <header>
-      <ul id="links">
-        <li class="github"><a href="https://github.com/fukuchiharuki/heading-image-maker/">GitHub Project</a></li>
-        <li class="twitter"><a href="https://twitter.com/intent/tweet?url=https://fukuchiharuki.me/heading-image-maker/&amp;via=fukuchiharuki&amp;text=A+tool+that+makes+a+heading+image+and+saves+it+in+a+file.+%7C+%E8%A6%8B%E5%87%BA%E3%81%97%E7%94%BB%E5%83%8F%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B%E3%80%81%E3%81%9D%E3%82%8C%E3%81%A0%E3%81%91%E3%81%AE%E3%83%84%E3%83%BC%E3%83%AB%E3%80%82">Tweet</a></li>
-      </ul>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <title>Heading Image Maker | 見出し画像メーカー</title>
+  <meta name="description"
+    content="A tool that makes a heading image and saves it in a file. | 見出し画像を作ってファイルに保存する、それだけのツール。">
+  <meta name="keywords" content="note,見出し,画像,heading,image,png">
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:site' content='@fukuchiharuki'>
+  <meta name='twitter:title' content='Heading Image Maker | 見出し画像メーカー'>
+  <meta name='twitter:description'
+    content='A tool that makes a heading image and saves it in a file. | 見出し画像を作ってファイルに保存する、それだけのツール。'>
+  <meta name='twitter:image' content='https://fukuchiharuki.me/heading-image-maker/images/key-visual.png'>
+  <link rel="stylesheet" media="all" href="./css/font.css">
+  <link rel="stylesheet" media="all" href="./css/style.css">
+</head>
 
-    <div id="container">
-      <div id="canvas">
-        <h1 class="text">見出し画像メーカー</h1>
-        <p class="text description">見出し画像を作ってファイルに保存する、それだけのツール。</p>
+<body>
+
+  <header>
+    <ul id="links">
+      <li class="github"><a href="https://github.com/fukuchiharuki/heading-image-maker/">GitHub Project</a></li>
+      <li class="twitter"><a
+          href="https://twitter.com/intent/tweet?url=https://fukuchiharuki.me/heading-image-maker/&amp;via=fukuchiharuki&amp;text=A+tool+that+makes+a+heading+image+and+saves+it+in+a+file.+%7C+%E8%A6%8B%E5%87%BA%E3%81%97%E7%94%BB%E5%83%8F%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B%E3%80%81%E3%81%9D%E3%82%8C%E3%81%A0%E3%81%91%E3%81%AE%E3%83%84%E3%83%BC%E3%83%AB%E3%80%82">Tweet</a>
+      </li>
+    </ul>
+  </header>
+
+  <div id="container">
+    <div id="canvas">
+      <h1 class="text">見出し画像メーカー</h1>
+      <p class="text description">見出し画像を作ってファイルに保存する、それだけのツール。</p>
+    </div>
+  </div>
+
+  <div id="form">
+    <div>
+      <div class="dt">見出し</div>
+      <div class="dd">
+        <input type="text" id="input-heading" value="見出し画像メーカー" />
       </div>
     </div>
-
-    <div id="form">
-      <div>
-        <div class="dt">見出し</div>
-        <div class="dd">
-          <input type="text" id="input-heading" value="見出し画像メーカー" />
-        </div>
-      </div>
-      <div>
-        <div class="dt">説明文</div>
-        <div class="dd">
-          <textarea id="input-description" >見出し画像を作ってファイルに保存する、それだけのツール。</textarea>
-        </div>
-      </div>
-      <div>
-        <div class="dt">文字色</div>
-        <div class="dd">
-          <input type="text" id="input-color" value="white" />
-        </div>
-      </div>
-      <div>
-        <div class="dt">背景色</div>
-        <div class="dd">
-          <input type="text" id="input-background-color" value="navy" />
-        </div>
-      </div>
-      <div>
-        <div class="dd">
-          <a class="color-palette" data-color="white" data-background-color="black"></a>
-          <a class="color-palette" data-color="white" data-background-color="navy"></a>
-          <a class="color-palette" data-color="white" data-background-color="seagreen"></a>
-          <a class="color-palette" data-color="yellow" data-background-color="orangered"></a>
-          <a class="color-palette" data-color="white" data-background-color="red"></a>
-          <a class="color-palette" data-color="deeppink" data-background-color="lightgreen"></a>
-          <a class="color-palette" data-color="yellow" data-background-color="hotpink"></a>
-          <a class="color-palette" data-color="red" data-background-color="yellow"></a>
-          <a class="color-palette" data-color="midnightblue" data-background-color="lightskyblue"></a>
-          <a class="color-palette" data-color="white" data-background-color="royalblue"></a>
-          <a id="random-color"></a>
-        </div>
-      </div>
-      <div>
-        <button id="download">📦 画像にしてダウンロード</button>
+    <div>
+      <div class="dt">説明文</div>
+      <div class="dd">
+        <textarea id="input-description">見出し画像を作ってファイルに保存する、それだけのツール。</textarea>
       </div>
     </div>
+    <div>
+      <div class="dt">文字色</div>
+      <div class="dd">
+        <input type="text" id="input-color" value="white" />
+      </div>
+    </div>
+    <div>
+      <div class="dt">背景色</div>
+      <div class="dd">
+        <input type="text" id="input-background-color" value="navy" />
+      </div>
+    </div>
+    <div>
+      <div class="dd">
+        <a class="color-palette" data-color="white" data-background-color="black"></a>
+        <a class="color-palette" data-color="white" data-background-color="navy"></a>
+        <a class="color-palette" data-color="white" data-background-color="mediumaquamarine"></a>
+        <a class="color-palette" data-color="yellow" data-background-color="orangered"></a>
+        <a class="color-palette" data-color="white" data-background-color="red"></a>
+        <a class="color-palette" data-color="deeppink" data-background-color="lightgreen"></a>
+        <a class="color-palette" data-color="yellow" data-background-color="hotpink"></a>
+        <a class="color-palette" data-color="red" data-background-color="yellow"></a>
+        <a class="color-palette" data-color="midnightblue" data-background-color="lightskyblue"></a>
+        <a class="color-palette" data-color="white" data-background-color="royalblue"></a>
+        <a id="random-color"></a>
+      </div>
+    </div>
+    <div>
+      <button id="download">📦 画像にしてダウンロード</button>
+    </div>
+  </div>
 
-    <script src="./js/bundle.js"></script>
+  <script src="./js/bundle.js"></script>
 
-    <footer>
-      <hr />
-      <div id="open-source licenses">
-        <h2>Open source licenses</h2>
-        <div>
-          <strong><a href="https://github.com/niklasvh/html2canvas">html2canvas</a></strong>
-          <pre>Copyright (c) 2012 Niklas von Hertzen
+  <footer>
+    <hr />
+    <div id="open-source licenses">
+      <h2>Open source licenses</h2>
+      <div>
+        <strong><a href="https://github.com/niklasvh/html2canvas">html2canvas</a></strong>
+        <pre>Copyright (c) 2012 Niklas von Hertzen
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -104,10 +110,10 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.</pre>
-        </div>
-        <div>
-          <strong><a href="https://github.com/jxnblk/hello-color">hello-color</a></strong>
-          <pre>Copyright (c) Jxnblk
+      </div>
+      <div>
+        <strong><a href="https://github.com/jxnblk/hello-color">hello-color</a></strong>
+        <pre>Copyright (c) Jxnblk
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -129,8 +135,9 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.</pre>
-        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
