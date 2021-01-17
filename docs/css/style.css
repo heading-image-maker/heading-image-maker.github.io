@@ -46,15 +46,19 @@ header {
   width: 1280px;
 }
 
-#canvas .text {
+#canvas .text-layer {
   left: 50%;
-  margin: 0;
-  padding: 0;
   position: absolute;
-  text-align: center;
+  top: 50%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   width: 100%;
+}
+
+#canvas .text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 #canvas h1 {
@@ -62,15 +66,17 @@ header {
   font-size: 100px;
   font-weight: 700;
   line-height: 1;
-  top: 44%;
 }
 
 #canvas .description {
   font-family: 'Noto Serif JP';
   font-size: 28px;
   font-weight: 700;
-  top: 64%;
   letter-spacing: 0.2rem;
+}
+
+#canvas h1:not(:empty) + .description:not(:empty) {
+  margin-top: 64px;
 }
 
 #form {
