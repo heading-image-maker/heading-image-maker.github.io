@@ -1,7 +1,7 @@
 body {
-  background-color: #f0f0f0;
-  margin: 20px auto;
   width: 1280px;
+  margin: 20px auto;
+  background-color: #F0F0F0;
 }
 
 header {
@@ -9,8 +9,7 @@ header {
   text-align: right;
 }
 
-#links,
-#links li {
+#links, #links li {
   margin: 0;
   padding: 0;
 }
@@ -21,10 +20,10 @@ header {
 }
 
 #links a {
+  padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
   font-weight: bold;
-  padding: 4px 8px;
   text-decoration: none;
 }
 
@@ -39,20 +38,20 @@ header {
 }
 
 #canvas {
-  background-color: navy;
-  color: white;
-  height: 670px;
   position: relative;
   width: 1280px;
+  height: 670px;
+  background-color: navy;
+  color: white;
 }
 
 #canvas .text-layer {
-  left: 50%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
+  left: 50%;
   width: 100%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
 }
 
 #canvas .text {
@@ -75,92 +74,121 @@ header {
   letter-spacing: 0.2rem;
 }
 
-#canvas h1:not(:empty) + .description:not(:empty) {
+#canvas h1:not(:empty)+.description:not(:empty) {
   margin-top: 64px;
 }
 
 #form {
-  margin-top: 24px;
   width: 1280px;
+  margin-top: 24px;
 }
 
 #form .dt {
   font-weight: bold;
 }
 
-#form > *+* {
+#form>*+* {
   margin-top: 12px;
 }
 
-#form > *:last-child {
+#form>*:last-child {
   margin-top: 24px;
 }
 
 #form input[type=text], #form textarea {
-  padding: 8px;
   width: calc(100% - 20px);
+  padding: 8px;
 }
 
 #form textarea {
   height: 3em;
 }
 
-#form input#input-color,
-#form input#input-background-color {
+#form input#input-color, #form input#input-background-color {
   width: 144px;
 }
 
-#form .color-palette,
-#form #random-color {
-  border: 1px solid black;
-  cursor: pointer;
+#form .color-palette, #form #random-color {
   display: inline-block;
-  height: 28px;
   position: relative;
   width: 28px;
+  height: 28px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-#form .color-palette[data-color=white] { color: white; }
-#form .color-palette[data-color=yellow] { color: yellow; }
-#form .color-palette[data-color=deeppink] { color: deeppink; }
-#form .color-palette[data-color=red] { color: red; }
-#form .color-palette[data-color=midnightblue] { color: midnightblue; }
-#form .color-palette[data-color=black] { color: black; }
+#form .color-palette[data-color=white] {
+  color: white;
+}
+#form .color-palette[data-color=yellow] {
+  color: yellow;
+}
+#form .color-palette[data-color=deeppink] {
+  color: deeppink;
+}
+#form .color-palette[data-color=red] {
+  color: red;
+}
+#form .color-palette[data-color=midnightblue] {
+  color: midnightblue;
+}
+#form .color-palette[data-color=black] {
+  color: black;
+}
 
-#form .color-palette[data-background-color=black] { background-color: black; }
-#form .color-palette[data-background-color=navy] { background-color: navy; }
-#form .color-palette[data-background-color=darkorange] { background-color: darkorange; }
-#form .color-palette[data-background-color=orangered] { background-color: orangered; }
-#form .color-palette[data-background-color=red] { background-color: red; }
-#form .color-palette[data-background-color=lightgreen] { background-color: lightgreen; }
-#form .color-palette[data-background-color=hotpink] { background-color: hotpink; }
-#form .color-palette[data-background-color=yellow] { background-color: yellow; }
-#form .color-palette[data-background-color=lightskyblue] { background-color: lightskyblue; }
-#form .color-palette[data-background-color=royalblue] { background-color: royalblue; }
+#form .color-palette[data-background-color=black] {
+  background-color: black;
+}
+#form .color-palette[data-background-color=navy] {
+  background-color: navy;
+}
+#form .color-palette[data-background-color=darkorange] {
+  background-color: darkorange;
+}
+#form .color-palette[data-background-color=orangered] {
+  background-color: orangered;
+}
+#form .color-palette[data-background-color=red] {
+  background-color: red;
+}
+#form .color-palette[data-background-color=lightgreen] {
+  background-color: lightgreen;
+}
+#form .color-palette[data-background-color=hotpink] {
+  background-color: hotpink;
+}
+#form .color-palette[data-background-color=yellow] {
+  background-color: yellow;
+}
+#form .color-palette[data-background-color=lightskyblue] {
+  background-color: lightskyblue;
+}
+#form .color-palette[data-background-color=royalblue] {
+  background-color: royalblue;
+}
 
 #form #random-color::after {
-  content: '❓';
-  left: 50%;
   position: absolute;
   top: 50%;
-  transform: translateY(-44%) translateX(-50%);
+  left: 50%;
+  content: '❓';
   -webkit-transform: translateY(-44%) translateX(-50%);
+          transform: translateY(-44%) translateX(-50%);
 }
 
 #form button {
   padding: 8px 16px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 
-footer,
-footer a {
+footer, footer a {
   color: gray;
 }
 
 footer hr {
+  max-width: 10%;
+  margin: 40px auto;
   border: 0;
   border-bottom: 1px solid;
-  margin: 40px auto;
-  max-width: 10%;
 }
