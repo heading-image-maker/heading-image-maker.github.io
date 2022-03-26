@@ -1,20 +1,18 @@
 # Heading image maker
 
-[Demo](https://fukuchiharuki.me/heading-image-maker/)
+- [Demo](https://fukuchiharuki.me/heading-image-maker/)
 
-### なにか
+# Introduction
 
-noteの見出し画像を作るためのツールです。作成できる画像のサイズはnote推奨の1280x760です。
+見出し画像を作るためのツールです。作成できる画像のアスペクト比は[note推奨の1280x760](https://www.help-note.com/hc/ja/articles/360000231642-%E7%99%BB%E9%8C%B2%E7%94%BB%E5%83%8F%E3%81%AE%E6%8E%A8%E5%A5%A8%E3%82%B5%E3%82%A4%E3%82%BA%E4%B8%80%E8%A6%A7#article_cover)と同じです。
 
-### なぜか
+# Usage
 
-noteは見出し画像用のテンプレートを配布しています。しかし見出し画像を作るのにパワーポイントを立ち上げるのは面倒です。またOffice Onlineで画像出力したときに見た目通りにならないこともストレスでした。
+1. 見出しと説明文を入力する
+2. 色を選択する
+3. ダウンロードボタン
 
-### どのように
-
-見出しと説明文を入力する。色を選択してダウンロードボタン。
-
-## Thanks
+# Thanks
 
 webpackの構成について次を参考にしました。
 
