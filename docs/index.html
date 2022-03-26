@@ -37,44 +37,54 @@
     </div>
   </div>
 
-  <div id="form">
+  <div id="form" class="grid">
     <div>
-      <div class="dt">見出し</div>
-      <div class="dd">
-        <textarea id="input-heading">見出し画像メーカー</textarea>
+      <div class="control">
+        <div class="dt">見出し</div>
+        <div class="dd">
+          <textarea id="input-heading">見出し画像メーカー</textarea>
+        </div>
+      </div>
+      <div class="control">
+        <div class="dt">説明文</div>
+        <div class="dd">
+          <textarea id="input-description">見出し画像を作ってファイルに保存する、それだけのツール。</textarea>
+        </div>
       </div>
     </div>
     <div>
-      <div class="dt">説明文</div>
-      <div class="dd">
-        <textarea id="input-description">見出し画像を作ってファイルに保存する、それだけのツール。</textarea>
+      <div class="grid">
+        <div>
+          <div class="control">
+            <div class="dt">文字色</div>
+            <div class="dd">
+              <input type="text" id="input-color" value="white" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="control">
+            <div class="dt">背景色</div>
+            <div class="dd">
+              <input type="text" id="input-background-color" value="navy" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      <div class="dt">文字色</div>
-      <div class="dd">
-        <input type="text" id="input-color" value="white" />
-      </div>
-    </div>
-    <div>
-      <div class="dt">背景色</div>
-      <div class="dd">
-        <input type="text" id="input-background-color" value="navy" />
-      </div>
-    </div>
-    <div>
-      <div class="dd">
-        <a class="color-palette" data-color="white" data-background-color="black"></a>
-        <a class="color-palette" data-color="white" data-background-color="navy"></a>
-        <a class="color-palette" data-color="white" data-background-color="darkorange"></a>
-        <a class="color-palette" data-color="yellow" data-background-color="orangered"></a>
-        <a class="color-palette" data-color="white" data-background-color="red"></a>
-        <a class="color-palette" data-color="deeppink" data-background-color="lightgreen"></a>
-        <a class="color-palette" data-color="yellow" data-background-color="hotpink"></a>
-        <a class="color-palette" data-color="red" data-background-color="yellow"></a>
-        <a class="color-palette" data-color="midnightblue" data-background-color="lightskyblue"></a>
-        <a class="color-palette" data-color="white" data-background-color="royalblue"></a>
-        <a id="random-color"></a>
+      <div class="control">
+        <div class="dd">
+          <a class="color-palette" data-color="white" data-background-color="black"></a>
+          <a class="color-palette" data-color="white" data-background-color="navy"></a>
+          <a class="color-palette" data-color="white" data-background-color="darkorange"></a>
+          <a class="color-palette" data-color="yellow" data-background-color="orangered"></a>
+          <a class="color-palette" data-color="white" data-background-color="red"></a>
+          <a class="color-palette" data-color="deeppink" data-background-color="lightgreen"></a>
+          <a class="color-palette" data-color="yellow" data-background-color="hotpink"></a>
+          <a class="color-palette" data-color="red" data-background-color="yellow"></a>
+          <a class="color-palette" data-color="midnightblue" data-background-color="lightskyblue"></a>
+          <a class="color-palette" data-color="white" data-background-color="royalblue"></a>
+          <a id="random-color"></a>
+        </div>
       </div>
     </div>
     <div>

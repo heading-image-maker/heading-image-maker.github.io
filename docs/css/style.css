@@ -78,21 +78,30 @@ header {
   margin-top: 64px;
 }
 
+.grid {
+  display: flex;
+}
+
+.grid > * {
+  flex: 1;
+}
+
 #form {
   width: 1280px;
   margin-top: 24px;
 }
 
-#form .dt {
-  font-weight: bold;
+#form.grid > * {
+  padding: 12px;
 }
 
-#form>*+* {
+#form .control+.control,
+#form .grid+.control {
   margin-top: 12px;
 }
 
-#form>*:last-child {
-  margin-top: 24px;
+#form .control .dt {
+  font-weight: bold;
 }
 
 #form input[type=text], #form textarea {
