@@ -4,7 +4,8 @@ const propertyType = {
   'heading': {
     inputSelector: function () { return document.querySelector('#input-heading'); },
     reflect: function (value) {
-      document.querySelector('#canvas h1').innerHTML = value;
+      const processedValue = value.replace(/\r?\n/g, '<br />');
+      document.querySelector('#canvas h1').innerHTML = processedValue;
     },
   },
 
