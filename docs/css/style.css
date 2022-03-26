@@ -120,6 +120,11 @@ header {
   padding: 8px;
 }
 
+#form input[type=number] {
+  padding: 8px;
+  width: 48px;
+}
+
 #form textarea {
   height: 3em;
 }
