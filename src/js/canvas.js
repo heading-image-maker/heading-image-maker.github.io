@@ -17,6 +17,20 @@ const propertyType = {
     },
   },
 
+  'heading-size': {
+    inputSelector: function () { return document.querySelector('#input-heading-size'); },
+    reflect: function (value) {
+      document.querySelector('#canvas h1').style.fontSize = value + 'px';
+    },
+  },
+
+  'description-size': {
+    inputSelector: function () { return document.querySelector('#input-description-size'); },
+    reflect: function (value) {
+      document.querySelector('#canvas p.description').style.fontSize = value + 'px';
+    },
+  },
+
   'color': {
     inputSelector: function () { return document.querySelector('#input-color'); },
     reflect: function (value) {
