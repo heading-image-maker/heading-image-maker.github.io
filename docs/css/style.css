@@ -129,6 +129,10 @@ header {
   height: 3em;
 }
 
+#form label {
+  cursor: pointer;
+}
+
 #form input#input-color, #form input#input-background-color {
   width: 144px;
 }

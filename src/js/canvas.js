@@ -31,6 +31,20 @@ const propertyType = {
     },
   },
 
+  'heading-bold': {
+    inputSelector: function () { return document.querySelector('#input-heading-bold'); },
+    reflect: function (value) {
+      document.querySelector('#canvas h1').style.fontWeight = value ? 'bold': 'normal';
+    },
+  },
+
+  'description-bold': {
+    inputSelector: function () { return document.querySelector('#input-description-bold'); },
+    reflect: function (value) {
+      document.querySelector('#canvas p.description').style.fontWeight = value ? 'bold': 'normal';
+    },
+  },
+
   'color': {
     inputSelector: function () { return document.querySelector('#input-color'); },
     reflect: function (value) {
@@ -50,7 +64,9 @@ function initInputHandlers() {
   Object.keys(propertyType).forEach(function (key) {
     const property = propertyType[key];
     property.inputSelector().addEventListener('input', function (e) {
-      property.reflect(e.target.value);
+      const value =
+        e.target.type === "checkbox" ? e.target.checked : e.target.value;
+      property.reflect(value);
     });
   });
 }
