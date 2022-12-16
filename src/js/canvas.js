@@ -17,6 +17,28 @@ const propertyType = {
     },
   },
 
+  'heading-font': {
+    inputSelector: function () { return document.querySelector('#input-heading-font'); },
+    reflect: function (value) {
+      const options = document.querySelector("#input-heading-font").options;
+      for (var i = 0; i < options.length; i++) {
+        document.querySelector("#canvas h1").classList.remove(options[i].value)
+      }
+      document.querySelector('#canvas h1').classList.add(value);
+    },
+  },
+
+  'description-font': {
+    inputSelector: function () { return document.querySelector('#input-description-font'); },
+    reflect: function (value) {
+      const options = document.querySelector("#input-description-font").options;
+      for (var i = 0; i < options.length; i++) {
+        document.querySelector("#canvas p.description").classList.remove(options[i].value)
+      }
+      document.querySelector('#canvas p.description').classList.add(value);
+    },
+  },
+
   'heading-size': {
     inputSelector: function () { return document.querySelector('#input-heading-size'); },
     reflect: function (value) {
@@ -28,6 +50,20 @@ const propertyType = {
     inputSelector: function () { return document.querySelector('#input-description-size'); },
     reflect: function (value) {
       document.querySelector('#canvas p.description').style.fontSize = value + 'px';
+    },
+  },
+
+  'heading-bold': {
+    inputSelector: function () { return document.querySelector('#input-heading-bold'); },
+    reflect: function (value) {
+      document.querySelector('#canvas h1').style.fontWeight = value ? 'bold': 'normal';
+    },
+  },
+
+  'description-bold': {
+    inputSelector: function () { return document.querySelector('#input-description-bold'); },
+    reflect: function (value) {
+      document.querySelector('#canvas p.description').style.fontWeight = value ? 'bold': 'normal';
     },
   },
 
@@ -50,7 +86,9 @@ function initInputHandlers() {
   Object.keys(propertyType).forEach(function (key) {
     const property = propertyType[key];
     property.inputSelector().addEventListener('input', function (e) {
-      property.reflect(e.target.value);
+      const value =
+        e.target.type === "checkbox" ? e.target.checked : e.target.value;
+      property.reflect(value);
     });
   });
 }
