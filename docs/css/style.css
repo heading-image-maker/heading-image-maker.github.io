@@ -66,13 +66,13 @@ header {
   line-height: 1;
 }
 
-#canvas .description {
+#canvas .strapline {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.2rem;
 }
 
-#canvas h1:not(:empty)+.description:not(:empty) {
+#canvas h1:not(:empty)+.strapline:not(:empty) {
   margin-top: 64px;
 }
 

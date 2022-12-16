@@ -9,11 +9,11 @@ const propertyType = {
     },
   },
 
-  'description': {
-    inputSelector: function () { return document.querySelector('#input-description'); },
+  'strapline': {
+    inputSelector: function () { return document.querySelector('#input-strapline'); },
     reflect: function (value) {
       const processedValue = value.replace(/\r?\n/g, '<br />');
-      document.querySelector('#canvas p.description').innerHTML = processedValue;
+      document.querySelector('#canvas p.strapline').innerHTML = processedValue;
     },
   },
 
@@ -28,14 +28,14 @@ const propertyType = {
     },
   },
 
-  'description-font': {
-    inputSelector: function () { return document.querySelector('#input-description-font'); },
+  'strapline-font': {
+    inputSelector: function () { return document.querySelector('#input-strapline-font'); },
     reflect: function (value) {
-      const options = document.querySelector("#input-description-font").options;
+      const options = document.querySelector("#input-strapline-font").options;
       for (var i = 0; i < options.length; i++) {
-        document.querySelector("#canvas p.description").classList.remove(options[i].value)
+        document.querySelector("#canvas p.strapline").classList.remove(options[i].value)
       }
-      document.querySelector('#canvas p.description').classList.add(value);
+      document.querySelector('#canvas p.strapline').classList.add(value);
     },
   },
 
@@ -46,10 +46,10 @@ const propertyType = {
     },
   },
 
-  'description-size': {
-    inputSelector: function () { return document.querySelector('#input-description-size'); },
+  'strapline-size': {
+    inputSelector: function () { return document.querySelector('#input-strapline-size'); },
     reflect: function (value) {
-      document.querySelector('#canvas p.description').style.fontSize = value + 'px';
+      document.querySelector('#canvas p.strapline').style.fontSize = value + 'px';
     },
   },
 
@@ -60,10 +60,10 @@ const propertyType = {
     },
   },
 
-  'description-bold': {
-    inputSelector: function () { return document.querySelector('#input-description-bold'); },
+  'strapline-bold': {
+    inputSelector: function () { return document.querySelector('#input-strapline-bold'); },
     reflect: function (value) {
-      document.querySelector('#canvas p.description').style.fontWeight = value ? 'bold': 'normal';
+      document.querySelector('#canvas p.strapline').style.fontWeight = value ? 'bold': 'normal';
     },
   },
 
