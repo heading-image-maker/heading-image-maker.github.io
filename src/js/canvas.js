@@ -1,8 +1,8 @@
 import randomColorCodes from "./color";
 
 const propertyType = {
-  'heading': {
-    inputSelector: function () { return document.querySelector('#input-heading'); },
+  'headline': {
+    inputSelector: function () { return document.querySelector('#input-headline'); },
     reflect: function (value) {
       const processedValue = value.replace(/\r?\n/g, '<br />');
       document.querySelector('#canvas h1').innerHTML = processedValue;
@@ -17,10 +17,10 @@ const propertyType = {
     },
   },
 
-  'heading-font': {
-    inputSelector: function () { return document.querySelector('#input-heading-font'); },
+  'headline-font': {
+    inputSelector: function () { return document.querySelector('#input-headline-font'); },
     reflect: function (value) {
-      const options = document.querySelector("#input-heading-font").options;
+      const options = document.querySelector("#input-headline-font").options;
       for (var i = 0; i < options.length; i++) {
         document.querySelector("#canvas h1").classList.remove(options[i].value)
       }
@@ -39,8 +39,8 @@ const propertyType = {
     },
   },
 
-  'heading-size': {
-    inputSelector: function () { return document.querySelector('#input-heading-size'); },
+  'headline-size': {
+    inputSelector: function () { return document.querySelector('#input-headline-size'); },
     reflect: function (value) {
       document.querySelector('#canvas h1').style.fontSize = value + 'px';
     },
@@ -53,8 +53,8 @@ const propertyType = {
     },
   },
 
-  'heading-bold': {
-    inputSelector: function () { return document.querySelector('#input-heading-bold'); },
+  'headline-bold': {
+    inputSelector: function () { return document.querySelector('#input-headline-bold'); },
     reflect: function (value) {
       document.querySelector('#canvas h1').style.fontWeight = value ? 'bold': 'normal';
     },
