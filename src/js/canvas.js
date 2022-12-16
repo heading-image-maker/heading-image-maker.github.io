@@ -1,26 +1,26 @@
 import randomColorCodes from "./color";
 
 const propertyType = {
-  'heading': {
-    inputSelector: function () { return document.querySelector('#input-heading'); },
+  'headline': {
+    inputSelector: function () { return document.querySelector('#input-headline'); },
     reflect: function (value) {
       const processedValue = value.replace(/\r?\n/g, '<br />');
       document.querySelector('#canvas h1').innerHTML = processedValue;
     },
   },
 
-  'description': {
-    inputSelector: function () { return document.querySelector('#input-description'); },
+  'strapline': {
+    inputSelector: function () { return document.querySelector('#input-strapline'); },
     reflect: function (value) {
       const processedValue = value.replace(/\r?\n/g, '<br />');
-      document.querySelector('#canvas p.description').innerHTML = processedValue;
+      document.querySelector('#canvas p.strapline').innerHTML = processedValue;
     },
   },
 
-  'heading-font': {
-    inputSelector: function () { return document.querySelector('#input-heading-font'); },
+  'headline-font': {
+    inputSelector: function () { return document.querySelector('#input-headline-font'); },
     reflect: function (value) {
-      const options = document.querySelector("#input-heading-font").options;
+      const options = document.querySelector("#input-headline-font").options;
       for (var i = 0; i < options.length; i++) {
         document.querySelector("#canvas h1").classList.remove(options[i].value)
       }
@@ -28,42 +28,42 @@ const propertyType = {
     },
   },
 
-  'description-font': {
-    inputSelector: function () { return document.querySelector('#input-description-font'); },
+  'strapline-font': {
+    inputSelector: function () { return document.querySelector('#input-strapline-font'); },
     reflect: function (value) {
-      const options = document.querySelector("#input-description-font").options;
+      const options = document.querySelector("#input-strapline-font").options;
       for (var i = 0; i < options.length; i++) {
-        document.querySelector("#canvas p.description").classList.remove(options[i].value)
+        document.querySelector("#canvas p.strapline").classList.remove(options[i].value)
       }
-      document.querySelector('#canvas p.description').classList.add(value);
+      document.querySelector('#canvas p.strapline').classList.add(value);
     },
   },
 
-  'heading-size': {
-    inputSelector: function () { return document.querySelector('#input-heading-size'); },
+  'headline-size': {
+    inputSelector: function () { return document.querySelector('#input-headline-size'); },
     reflect: function (value) {
       document.querySelector('#canvas h1').style.fontSize = value + 'px';
     },
   },
 
-  'description-size': {
-    inputSelector: function () { return document.querySelector('#input-description-size'); },
+  'strapline-size': {
+    inputSelector: function () { return document.querySelector('#input-strapline-size'); },
     reflect: function (value) {
-      document.querySelector('#canvas p.description').style.fontSize = value + 'px';
+      document.querySelector('#canvas p.strapline').style.fontSize = value + 'px';
     },
   },
 
-  'heading-bold': {
-    inputSelector: function () { return document.querySelector('#input-heading-bold'); },
+  'headline-bold': {
+    inputSelector: function () { return document.querySelector('#input-headline-bold'); },
     reflect: function (value) {
       document.querySelector('#canvas h1').style.fontWeight = value ? 'bold': 'normal';
     },
   },
 
-  'description-bold': {
-    inputSelector: function () { return document.querySelector('#input-description-bold'); },
+  'strapline-bold': {
+    inputSelector: function () { return document.querySelector('#input-strapline-bold'); },
     reflect: function (value) {
-      document.querySelector('#canvas p.description').style.fontWeight = value ? 'bold': 'normal';
+      document.querySelector('#canvas p.strapline').style.fontWeight = value ? 'bold': 'normal';
     },
   },
 
