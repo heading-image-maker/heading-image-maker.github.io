@@ -3,15 +3,13 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Heading Image Maker - 見出し画像メーカー</title>
-  <meta name="description"
-    content="A tool for making heading images. - 見出し画像を作るツール。">
-  <meta name="keywords" content="note,見出し,画像,heading,image,png">
+  <title>Heading Image Maker | A tool for making heading images.</title>
+  <meta name="description" content="A tool for making heading images.">
+  <meta name="keywords" content="note,見出し,画像,メーカー,heading,image,maker">
   <meta name='twitter:card' content='summary_large_image'>
   <meta name='twitter:site' content='@fukuchiharuki'>
-  <meta name='twitter:title' content='Heading Image Maker - 見出し画像メーカー'>
-  <meta name='twitter:description'
-    content='A tool for making heading images. - 見出し画像を作るツール。'>
+  <meta name='twitter:title' content='Heading Image Maker'>
+  <meta name='twitter:description' content='A tool for making heading images.'>
   <meta name='twitter:image' content='https://heading-image-maker.github.io/images/key-visual.png'>
   <link rel="stylesheet" media="all" href="./css/font.css">
   <link rel="stylesheet" media="all" href="./css/style.css">
@@ -31,24 +29,24 @@
   <div id="container">
     <div id="canvas">
       <div class="text-layer">
-        <h1 class="text text--font-M_PLUS_1p">見出し画像メーカー</h1>
-        <p class="text description text--font-Noto_Serif_JP">見出し画像を作ってファイルに保存する、それだけのツール。</p>
+        <h1 class="text text--font-M_PLUS_1p">Heading Image Maker</h1>
+        <p class="text strapline text--font-Noto_Serif_JP">A tool for making heading images.</p>
       </div>
     </div>
   </div>
 
   <div class="download">
-    <button id="download">📦 画像にしてダウンロード</button>
+    <button id="download">📦 Download as Image</button>
   </div>
 
   <div id="form">
     <div class="grid">
       <div>
         <div class="control">
-          <div class="dt">見出し</div>
+          <div class="dt">Headline</div>
           <div class="dd">
-            <textarea id="input-heading">見出し画像メーカー</textarea>
-            <select id="input-heading-font">
+            <textarea id="input-headline">Heading Image Maker</textarea>
+            <select id="input-headline-font">
               <option value="text--font-Noto_Serif_JP">Noto Serif JP</option>
               <option value="text--font-M_PLUS_1p" selected="selected">M PLUS 1p</option>
               <option value="text--font-M_PLUS_Rounded_1c">M PLUS Rounded 1c</option>
@@ -58,17 +56,17 @@
               <option value="text--font-Hannari">Hannari</option>
               <option value="text--font-Kokoro">Kokoro</option>
             </select>
-            <input type="number" id="input-heading-size" value="100" /> px
-            <label><input type="checkbox" id="input-heading-bold" checked="checked" /> bold</label>
+            <input type="number" id="input-headline-size" value="100" /> px
+            <label><input type="checkbox" id="input-headline-bold" checked="checked" /> bold</label>
           </div>
         </div>
       </div>
       <div>
         <div class="control">
-          <div class="dt">説明文</div>
+          <div class="dt">Strapline</div>
           <div class="dd">
-            <textarea id="input-description">見出し画像を作ってファイルに保存する、それだけのツール。</textarea>
-            <select id="input-description-font">
+            <textarea id="input-strapline">A tool for making heading images.</textarea>
+            <select id="input-strapline-font">
               <option value="text--font-Noto_Serif_JP" selected="selected">Noto Serif JP</option>
               <option value="text--font-M_PLUS_1p">M PLUS 1p</option>
               <option value="text--font-M_PLUS_Rounded_1c">M PLUS Rounded 1c</option>
@@ -78,8 +76,8 @@
               <option value="text--font-Hannari">Hannari</option>
               <option value="text--font-Kokoro">Kokoro</option>
             </select>
-            <input type="number" id="input-description-size" value="28" /> px
-            <label><input type="checkbox" id="input-description-bold" checked="checked" /> bold</label>
+            <input type="number" id="input-strapline-size" value="30" /> px
+            <label><input type="checkbox" id="input-strapline-bold" checked="checked" /> bold</label>
           </div>
         </div>
       </div>
@@ -87,7 +85,7 @@
         <div class="grid">
           <div>
             <div class="control">
-              <div class="dt">文字色</div>
+              <div class="dt">Font Color</div>
               <div class="dd">
                 <input type="text" id="input-color" value="white" />
               </div>
@@ -95,7 +93,7 @@
           </div>
           <div>
             <div class="control">
-              <div class="dt">背景色</div>
+              <div class="dt">Background Color</div>
               <div class="dd">
                 <input type="text" id="input-background-color" value="navy" />
               </div>
