@@ -17,6 +17,28 @@ const propertyType = {
     },
   },
 
+  'heading-font': {
+    inputSelector: function () { return document.querySelector('#input-heading-font'); },
+    reflect: function (value) {
+      const options = document.querySelector("#input-heading-font").options;
+      for (var i = 0; i < options.length; i++) {
+        document.querySelector("#canvas h1").classList.remove(options[i].value)
+      }
+      document.querySelector('#canvas h1').classList.add(value);
+    },
+  },
+
+  'description-font': {
+    inputSelector: function () { return document.querySelector('#input-description-font'); },
+    reflect: function (value) {
+      const options = document.querySelector("#input-description-font").options;
+      for (var i = 0; i < options.length; i++) {
+        document.querySelector("#canvas p.description").classList.remove(options[i].value)
+      }
+      document.querySelector('#canvas p.description').classList.add(value);
+    },
+  },
+
   'heading-size': {
     inputSelector: function () { return document.querySelector('#input-heading-size'); },
     reflect: function (value) {
