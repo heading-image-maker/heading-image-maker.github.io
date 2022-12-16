@@ -61,14 +61,12 @@ header {
 }
 
 #canvas h1 {
-  font-family: 'M PLUS 1p';
   font-size: 100px;
   font-weight: 700;
   line-height: 1;
 }
 
 #canvas .description {
-  font-family: 'Noto Serif JP';
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -120,6 +118,10 @@ header {
   padding: 8px;
 }
 
+#form select {
+  padding: 8px;
+}
+
 #form input[type=number] {
   padding: 8px;
   width: 48px;
@@ -127,6 +129,10 @@ header {
 
 #form textarea {
   height: 3em;
+}
+
+#form label {
+  cursor: pointer;
 }
 
 #form input#input-color, #form input#input-background-color {

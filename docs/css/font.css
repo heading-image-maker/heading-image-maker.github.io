@@ -1,3 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/earlyaccess/kokoro.css');
+
+.text--font-Noto_Serif_JP {
+  font-family: 'Noto Serif JP';
+}
+
+.text--font-M_PLUS_1p {
+  font-family: 'M PLUS 1p';
+}
+
+.text--font-M_PLUS_Rounded_1c {
+  font-family: 'M PLUS Rounded 1c';
+}
+
+.text--font-Impact {
+  font-family: fantasy, Impact;
+}
+
+.text--font-cursive {
+  font-family: cursive;
+}
+
+.text--font-Hannari {
+  font-family: 'Hannari';
+}
+
+.text--font-Kokoro {
+  font-family: 'Kokoro';
+}
