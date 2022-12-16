@@ -17,7 +17,11 @@
 }
 
 .text--font-Impact {
-  font-family: fantasy, Impact;
+  font-family: Impact;
+}
+
+.text--font-fantasy {
+  font-family: fantasy;
 }
 
 .text--font-cursive {
